@@ -1,0 +1,27 @@
+{
+  "name": "fcc-file-metadata",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp challenge to build a file metadata microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --recursive test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-fcc/fcc-file-metadata.git"
+  },
+  "author": "Lucas R. Moura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucas-fcc/fcc-file-metadata/issues"
+  },
+  "homepage": "https://github.com/lucas-fcc/fcc-file-metadata#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0"
+  }
+}

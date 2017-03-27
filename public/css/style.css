@@ -1,0 +1,11 @@
+body {
+    font-family: 'Bitter', serif;
+}
+
+footer i {
+    color: #333;
+}
+
+footer i:hover {
+    color: #333C;
+}
