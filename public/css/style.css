@@ -2,8 +2,9 @@ body {
     font-family: 'Bitter', serif;
 }
 
-footer {
-	padding-top: 2em;
+.centered{
+	margin: 0 auto;
+    float: none;
 }
 
 footer i {
