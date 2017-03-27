@@ -8,16 +8,17 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.post('/fileInfo', upload.single('archive'), (req, res) => {
+app.post('/fileInfo', upload.single('archive'), (req, res, next) => {
 
     if (req.file) {
         const size  = req.file.size;
         fs.unlinkSync(req.file.path); // deletes the file after gets its size
-        
-        return res.json({ size: req.file.size });
+
+        return res.json({ size });
     }
 
-    throw new Error("Please, submit a file");
+    // throw new Error("Please, submit a file");
+    next(new Error("Please, submit a file"));
 
 });
 
